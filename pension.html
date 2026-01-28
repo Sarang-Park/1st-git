@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>행복 펜션 예약 시스템</title>
+    <style>
+        /* CSS: 펜션 페이지를 예쁘게 꾸미는 인테리어 역할 */
+        body { font-family: '나눔고딕', sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; padding: 50px; }
+        .reservation-form { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 400px; }
+        h2 { color: #2c3e50; text-align: center; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #27ae60; color: white; border: none; border-radius: 5px; margin-top: 20px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #219150; }
+    </style>
+</head>
+<body>
+
+<div class="reservation-form">
+    <h2>🏡 펜션 예약하기</h2>
+    <form action="#">
+        <label>예약자 성함</label>
+        <input type="text" placeholder="성함을 입력하세요">
+
+        <label>입실 날짜</label>
+        <input type="date">
+
+        <label>객실 선택</label>
+        <select>
+            <option value="A">A동 (산 전망)</option>
+            <option value="B">B동 (바다 전망)</option>
+        </select>
+
+        <button type="button" onclick="alert('예약 신청이 완료되었습니다!')">예약 신청하기</button>
+    </form>
+</div>
+
+</body>
+</html>
